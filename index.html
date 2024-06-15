@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Leticia Figueiredo</title>
+    <meta name="decription" content="WDD 131 - Dynamic Web Fundamentals Leticia Figueiredo">
+    <meta name="author" content="Leticia Figueiredo">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/let%C3%ADcia-pinto-figueiredo/">Linkedin</a></li>
+                <li><a href="https://byui.instructure.com/.">I-learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main class="content">
+        <section class="card">
+            <h2>Introduction</h2>
+            <p>This is an introduction of me </p>
+            <img src="images/profile-me.jpeg" alt="profile">
+        </section>    
+           
+        <section class="card">
+            <h2>Web Link</h2>
+            <ul>
+                <li><a href="https://www.churchofjesuschrist.org/?lang=eng">Link 1</a></li>
+                <li><a href="https://www.byupathway.edu/">Link 2</a></li>
+                <li><a href="https://www.netflix.com/browse">Link 3</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> // Letícia Figueiredo // Portugal</p>
+    
+        <p id="lastModified"></p>
+        <script>
+        const lastModifiedElement = document.getElementById("lastModified");
+        const lastModifiedDate = getLastModifiedDate(); // Replace with your actual function
+        lastModifiedElement.textContent = `Last modified: ${lastModifiedDate}`;
+        </script>
+    </footer>
+</body>
+</html>
