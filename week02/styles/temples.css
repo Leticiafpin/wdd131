@@ -1,0 +1,20 @@
+/* temples.css (mobile view) */
+.tempfig {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+    gap: 1rem; /* Adjust spacing as needed */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+}
+
+nav ul li:hover {
+    background-color: #0099cc; /* Change to your desired color */
+    /* Other hover styles */
+}

@@ -1,0 +1,29 @@
+/* temples-large.css (larger view) */
+@media screen and (min-width: 768px) {
+    .tempfig {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger view */
+    }
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around; /* Adjust alignment as needed */
+}
+
+nav ul li:hover {
+    background-color: #0099cc; /* Change to your desired color */
+    /* Other hover styles */
+}
+
+.main {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center horizontally */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Other grid properties */
+}
