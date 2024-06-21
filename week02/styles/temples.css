@@ -12,9 +12,32 @@ body {
 nav ul {
     display: flex;
     justify-content: space-around; /* Adjust alignment as needed */
+    list-style: none;
 }
 
 nav ul li:hover {
     background-color: #0099cc; /* Change to your desired color */
     /* Other hover styles */
+}
+
+/* Show the menu when the button is clicked */
+.show-menu ul {
+    display: block;
+}
+
+#hamburger-button {
+    display: none; /* Hide initially */
+    /* Other styling properties */
+}
+
+@media screen and (max-width: 600px) {
+    #hamburger-button {
+        display: block; /* Show the button on small screens */
+    }
+    nav ul {
+        display: none; /* Hide the menu initially */
+    }
+    nav ul.show-menu {
+        display: flex; /* Show the menu when the button is clicked */
+    }
 }

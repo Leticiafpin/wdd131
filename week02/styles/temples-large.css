@@ -27,3 +27,20 @@ nav ul li:hover {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* Other grid properties */
 }
+
+/* Show the menu when the button is clicked */
+.show-menu ul {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    #hamburger-button {
+        display: block; /* Show the button on small screens */
+    }
+    nav ul {
+        display: none; /* Hide the menu initially */
+    }
+    nav ul.show-menu {
+        display: flex; /* Show the menu when the button is clicked */
+    }
+}
