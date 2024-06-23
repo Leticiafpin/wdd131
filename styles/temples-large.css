@@ -1,37 +1,45 @@
 /* temples-large.css (larger view) */
 @media screen and (min-width: 768px) {
     .tempfig {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for larger view */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
-
+ 
+header{
+    background-color: #4d0558;
+    color: #FFFF;
+    display: flex;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
+.imgTemp{
+    display: flex;
+    
+}
+
 nav ul {
     display: flex;
-    justify-content: space-around; /* Adjust alignment as needed */
+    justify-content: space-around; 
 }
 
 nav a:hover {
-    color: #0074D9; 
-    text-decoration: underline; 
+    color: black; 
+    text-decoration: none; 
 }
 
 
 nav ul li:hover {
-    background-color: #0099cc; /* Change to your desired color */
-    /* Other hover styles */
+    background-color: #4d0558;
 }
 
 .main {
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 1200px; 
+    margin: 0 auto; 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* Other grid properties */
 }
 
 /* Show the menu when the button is clicked */
@@ -41,13 +49,13 @@ nav ul li:hover {
 
 @media screen and (max-width: 600px) {
     #hamburger-button {
-        display: block; /* Show the button on small screens */
+        display: block; 
     }
     nav ul {
-        display: none; /* Hide the menu initially */
+        display: none; 
     }
     nav ul.show-menu {
-        display: flex; /* Show the menu when the button is clicked */
+        display: flex; 
     }
 }
 
