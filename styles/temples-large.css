@@ -15,6 +15,12 @@ nav ul {
     justify-content: space-around; /* Adjust alignment as needed */
 }
 
+nav a:hover {
+    color: #0074D9; 
+    text-decoration: underline; 
+}
+
+
 nav ul li:hover {
     background-color: #0099cc; /* Change to your desired color */
     /* Other hover styles */
@@ -44,3 +50,4 @@ nav ul li:hover {
         display: flex; /* Show the menu when the button is clicked */
     }
 }
+
