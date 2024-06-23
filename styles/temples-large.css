@@ -58,4 +58,10 @@ nav ul li:hover {
         display: flex; 
     }
 }
+´
 
+.footer {
+    background-color: #4d0558;
+    color: #FFFF;
+    display: flex;
+}
