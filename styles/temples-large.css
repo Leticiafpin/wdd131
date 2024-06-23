@@ -17,7 +17,7 @@ body {
 
 .imgTemp{
     display: flex;
-    
+
 }
 
 nav ul {
@@ -47,15 +47,4 @@ nav ul li:hover {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
-    #hamburger-button {
-        display: block; 
-    }
-    nav ul {
-        display: none; 
-    }
-    nav ul.show-menu {
-        display: flex; 
-    }
-}
 
