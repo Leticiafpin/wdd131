@@ -1,3 +1,15 @@
+@media screen and (max-width: 768px) {
+  /* Styles for smaller screens (e.g., mobile) */
+  /* Adjust layout, font sizes, etc. */
+}
+
+:root {
+  --primary-color: #590404;
+  --background-color: #D5E1DD;
+  --secondary-color: #a6ffa9;
+  /* Define other variables as needed */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('images/hero-large.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
@@ -55,6 +67,13 @@ body {
     margin-bottom: 20px;
     border-radius: 5px;
 }
+
+.conditions::before {
+  content: "\2600";
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 
 .data-item {
     display: flex;
