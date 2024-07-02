@@ -1,13 +1,10 @@
 @media screen and (max-width: 768px) {
-  /* Styles for smaller screens (e.g., mobile) */
-  /* Adjust layout, font sizes, etc. */
 }
 
 :root {
   --primary-color: #590404;
   --background-color: #D5E1DD;
   --secondary-color: #a6ffa9;
-  /* Define other variables as needed */
 }
 
 body {
@@ -19,7 +16,6 @@ body {
     color: #333;
   }
   
-  
   .main {
     max-width: 1200px; 
     margin: 0 auto; 
@@ -27,11 +23,10 @@ body {
   }
 
   main picture img {
-    width: 100%; /* A imagem ocupa toda a largura do container */
-    height: auto; /* Mantém a proporção original */
-    display: block; /* Remove espaços indesejados abaixo da imagem */
+    width: 100%;
+    height: auto;
+    display: block;
   }
-
 
   header {
     background-color: #D5E1DD;
@@ -42,23 +37,15 @@ body {
     margin-bottom: 20px;
   }
 
-  
-   
- 
-
   h1,h2 {
     color: #590404;
   }
-
- 
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
-
 
 .data-section,
 .weather-section {
@@ -73,7 +60,6 @@ body {
   font-size: 24px;
   margin-right: 10px;
 }
-
 
 .data-item {
     display: flex;
