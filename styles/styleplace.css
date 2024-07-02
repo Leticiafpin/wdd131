@@ -1,7 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* Cor de fundo geral */
+    background-image: url('C:\Users\letic\Desktop\uni\wdd131\images\hero-large.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
   }
+  
   
   .main {
     max-width: 1200px; /* Largura máxima do conteúdo */
@@ -16,64 +21,24 @@ body {
   }
 
 
-  .header {
-    background-color: #D5E1DD;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .data-section {
-    background-color: #8ABE8C;
-    padding: 20px;
-  }
-  
-  .weather-section {
-    background-color: #F0F0F0;
-    padding: 20px;
-  }
-
-  
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-  }
-  
-  
   header {
     background-color: #D5E1DD;
     color: #333;
     text-align: center;
     padding: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
   }
+
   
-  .data-section {
-    background-color: #8ABE8C;
-    padding: 20px;
+   
+ 
+
+  h1,h2 {
+    color: #590404;
   }
-  
-  .weather-section {
-    background-color: #F0F0F0;
-    padding: 20px;
-  }
-  
-  footer {
-    text-align: center;
-    color: #666;
-    font-size: 14px;
-    margin-top: 20px
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-image: url('background-lemurs.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #333;
-}
+
+ 
 
 .container {
     max-width: 1200px;
@@ -81,15 +46,11 @@ footer {
     padding: 20px;
 }
 
-.header {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+
 
 .data-section,
 .weather-section {
-    background-color: #8ABE8C;
+    background-color: #3aca3f91;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -99,26 +60,30 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-weight: bold
 }
 
 .data-label,
-        .data-value {
-            font-size: 16px;
-        }
+.data-value {
+    font-size: 16px;
+    color: #590404;
+}
 
-        .temperature {
-            font-size: 24px;
-            font-weight: bold;
-        }
+.temperature {
+    font-size: 24px;
+    font-weight: bold;
+}
 
-        .conditions {
-            margin-left: auto;
-        }
+.conditions {
+    margin-left: auto;
+}
 
-        footer {
-            text-align: center;
-            color: #666;
-            font-size: 14px;
-            margin-top: 20px;
-        }
+footer {
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #d5e1dd;
+}
 
