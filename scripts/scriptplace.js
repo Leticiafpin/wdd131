@@ -1,18 +1,14 @@
 // // Função para chamar o ano atual (currentYear)
-const currentYear = new Date().getFullYear();
-document.getElementById("currentYear").textContent = currentYear;
+//const currentYear = new Date().getFullYear();
+//document.getElementById("currentYear").textContent = currentYear;
 
 // Função para obter a data de modificação (assumindo que você tenha uma função chamada getLastModifiedDate)
-function getLastModifiedDate() {
-    
-    return;
-}
+//function getLastModifiedDate() {
+  //  return "2024-07-02";}
 
-const lastModifiedDate = getLastModifiedDate();
-console.log("Last modified:", lastModifiedDate);
-
-document.getElementById("lastModifiedDate").textContent = `Last modified: ${lastModifiedDate}`;
-
+// Obtenha a data de modificação
+//const lastModifiedDate = getLastModifiedDate();
+//document.getElementById("lastModified").textContent = `Last modified: ${lastModifiedDate}`;
 
 
 // Defina os valores estáticos (você pode ajustar conforme necessário)
