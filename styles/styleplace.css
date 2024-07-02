@@ -55,7 +55,7 @@ body {
     border-radius: 5px;
 }
 
-.conditions::before {
+.conditions::after {
   content: "\2600";
   font-size: 24px;
   margin-right: 10px;
