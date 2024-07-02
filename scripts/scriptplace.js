@@ -1,3 +1,20 @@
+// // Função para chamar o ano atual (currentYear)
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
+
+// Função para obter a data de modificação (assumindo que você tenha uma função chamada getLastModifiedDate)
+function getLastModifiedDate() {
+    
+    return;
+}
+
+const lastModifiedDate = getLastModifiedDate();
+console.log("Last modified:", lastModifiedDate);
+
+document.getElementById("lastModifiedDate").textContent = `Last modified: ${lastModifiedDate}`;
+
+
+
 // Defina os valores estáticos (você pode ajustar conforme necessário)
 const temperatureCelsius = 5; // Exemplo: 5°C
 const windSpeedKmph = 10; // Exemplo: 10 km/h
@@ -14,7 +31,7 @@ function calculateWindChill(temperature, windSpeed) {
 
 // Chame a função e exiba o resultado
 const windChillResult = calculateWindChill(temperatureCelsius, windSpeedKmph);
-console.log("Sensação térmica:", windChillResult);
+console.log("WindChill:", windChillResult);
 
 // Exiba o resultado na sua página (assumindo que você tenha um elemento com id="windChill")
-document.getElementById("windChill").textContent = `Sensação térmica: ${windChillResult}`;
+document.getElementById("windChill").textContent = `Wind Chill: ${windChillResult}`;
