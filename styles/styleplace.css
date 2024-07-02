@@ -60,10 +60,65 @@ footer {
   }
   
   footer {
-     color: #666666;
-     font-size: small;
-     text-align:center; 
-     padding-bottom:10px; 
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-top: 20px
   }
   
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('background-lemurs.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.data-section,
+.weather-section {
+    background-color: #8ABE8C;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.data-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.data-label,
+        .data-value {
+            font-size: 16px;
+        }
+
+        .temperature {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .conditions {
+            margin-left: auto;
+        }
+
+        footer {
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-top: 20px;
+        }
 
