@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('C:\Users\letic\Desktop\uni\wdd131\images\hero-large.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+    background-image: url('images/hero-large.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,9 +9,9 @@ body {
   
   
   .main {
-    max-width: 1200px; /* Largura máxima do conteúdo */
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
-    padding: 20px; /* Espaçamento interno */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
   }
 
   main picture img {
@@ -50,7 +50,7 @@ body {
 
 .data-section,
 .weather-section {
-    background-color: #3aca3f91;
+    background-color: #a6ffa9;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
