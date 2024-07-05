@@ -1,0 +1,12 @@
+Travel Agency Website Project
+Project Subject: Travel Agency Website
+Brief Description of Planned Content
+The website will be a dynamic platform showcasing travel experiences, destination guides, and adventure stories. Users can explore different places, read travel tips, and share their own adventures.
+
+Reason for Choosing This Subject
+As the owner of a travel agency, I want to test a website to promote our services and attract clients. Additionally, this project aims to achieve the following learning objectives:
+
+Develop responsive web pages that follow best practices and use valid HTML and CSS.
+Demonstrate proficiency in JavaScript language syntax.
+Use JavaScript to respond to events and dynamically modify HTML.
+Exhibit the traits of an effective team member, such as clear communication, collaboration, fulfilling assignments, and meeting deadlines.
