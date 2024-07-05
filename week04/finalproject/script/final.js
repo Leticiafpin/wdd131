@@ -40,3 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('It is the user\'s first visit.');
     }
 });
+
+// Exemplo de código JavaScript (adapte conforme necessário)
+const button = document.querySelector('button');
+button.addEventListener('click', () => {
+    alert('Obrigado por entrar em contato conosco!');
+});
