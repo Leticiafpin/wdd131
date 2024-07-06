@@ -38,6 +38,10 @@ nav a {
     padding: 0.5em;
 }
 
+nav :hover{
+    color: black;
+}
+
 /* Conteúdo principal */
 main {
     padding: 2em;
