@@ -127,19 +127,41 @@ const temples = [
     }
   ];
 
-  // Function to filter temples based on criteria
-function filterTemples(criteria) {
-    switch (criteria) {
-        case "Old":
-            return temples.filter(temp => temp.dedicated < 1900);
-        case "New":
-            return temples.filter(temp => temp.dedicated > 2000);
-        case "Large":
-            return temples.filter(temp => temp.area > 90000);
-        case "Small":
-            return temples.filter(temp => temp.area < 10000);
-        default:
-            return temples;
-    }
-}
+
+// Função para criar os "temple cards"
+function createTempleCards(templeArray) {
+    const container = document.getElementById("temple-cards-container");
   
+    templeArray.forEach((temple) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+  
+      const cardContent = `
+        <h3>${temple.name}</h3>
+        <p>Location: ${temple.location}</p>
+        <p>Date Dedicated: ${temple.dateDedicated}</p>
+        <p>Total Area: ${temple.areaSquareFeet} sq ft</p>
+        <img src="${temple.imageUrl}" alt="${temple.name}" loading="lazy">
+      `;
+  
+      card.innerHTML = cardContent;
+      container.appendChild(card);
+    });
+  }
+  
+  // Chame a função com o array de templos
+  createTempleCards(temples);
+
+  function createTempleCards() {
+    temples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = "<span class="label">Location:</span> ${temple.location}";
+    })
+  }

@@ -57,3 +57,10 @@ footer {
 #current-year, #lastModified {
     font-weight: bold;
 }
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Outros estilos conforme necessário */
+}
