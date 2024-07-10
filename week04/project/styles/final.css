@@ -1,4 +1,9 @@
 /* Estilos CSS (adapte conforme necessário) */
+:root{
+    --primary-color: #004aad;
+    --secondary-color: #008037;
+    --third-color:#f5ab00;
+}
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
@@ -9,7 +14,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #290681;
+    background-color: var(--primary-color);
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -18,8 +23,8 @@ header {
 /* Navigation styles */
 nav {
     display: flex;
-    justify-content: center;
-    background-color: #296837;
+    justify-content: end;
+    background-color: var(--secondary-color);
     padding: 0.5rem;
 }
 
@@ -29,11 +34,28 @@ nav a {
     margin: 0 1rem;
 }
 
+h1, h2,h3{
+    color: var(--secondary-color)
+}
+
+.webTitle{
+    color: #f5ab00;
+}
+
+.agencyName {
+    color: #f5ab00;
+}
+
+
 /* Container styles */
-.container {
+main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.color{
+    display: flex;
 }
 
 /* Responsive styles */
@@ -51,9 +73,8 @@ nav a {
     }
 }
 
-/* Lazy loading images */
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+    width: 100px;
+    padding: 10px;
+    display: flex;
 }
