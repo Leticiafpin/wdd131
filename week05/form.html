@@ -27,45 +27,70 @@
             <select id="productSelect" name="Product" required>
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
-            <fieldset>
-                <legend>Overall Rating</legend>
-                <input type="radio" id="star1" name="rating" value="1" required>
-                <label for="star1">★</label> <!-- Unicode star character -->
-                
-                <input type="radio" id="star2" name="rating" value="2" required>
-                <label for="star2">★★</label>
-                
-                <input type="radio" id="star3" name="rating" value="3" required>
-                <label for="star3">★★★</label>
 
-                <input type="radio" id="star4" name="rating" value="4" required>
-                <label for="star4">★★★★</label>
+           <p>Overall Rating</p>
+            <div class="stars">
+                <div class="rating">
+                    <label for="star1">★
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </label>
+                    
+                </div>
+                <div class="rating">
+                    <label for="star2">★★<input type="radio" id="star2" name="rating" value="2" required></label>
+                    
+                </div>
+                <div class="rating">
+                    <label for="star3">★★★<input type="radio" id="star3" name="rating" value="3" required></label>
+                    
+                </div>
+                <div class="rating">
+                    <label for="star4">★★★★<input type="radio" id="star4" name="rating" value="4" required></label>
+                    
+                </div>
+                <div class="rating">
+                    <label for="star5">★★★★★<input type="radio" id="star5" name="rating" value="5" required></label>
+                    
+                </div>
+            </div>
+            
 
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5">★★★★★</label>
-            </fieldset>
+            <div class="date">
+                <label for="installationDate">Date of Installation</label><br>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
 
-            <label for="installationDate">Date of Installation:</label>
-            <input type="date" id="installationDate" name="installationDate" required>
+            <div class="survey-container">
+                <p>Which features did you find usefui in the product?<br>(Check all that apply)</p>
+                <ul class="feature-list">
+                    <li class="checkbox-item">
+                        <input type="checkbox" id="feature1" name="usefulFeatures" value="feature1">
+                        <label for="feature1">Durability</label>
+                    </li>
+                    <li class="checkbox-item">
+                        <input type="checkbox" id="feature2" name="usefulFeatures" value="feature2">
+                        <label for="feature2">Ease of Use</label>
+                    </li>
+                    <li class="checkbox-item">
+                        <input type="checkbox" id="feature3" name="usefulFeatures" value="feature2">
+                        <label for="feature2">Performance</label>
+                    </li>   
+                    <li class="checkbox-item">
+                        <input type="checkbox" id="feature4" name="usefulFeatures" value="feature2">
+                        <label for="feature2">Design</label>
+                    </li>
+                </ul>
+            </div>
 
-            <fieldset>
-                <legend>Useful Features</legend>
-                <input type="checkbox" id="feature1" name="usefulFeatures" value="feature1">
-                <label for="feature1">Feature 1</label>
+            
+            <label for="review">Written Review(Optional)</label><br>
+            <textarea id="review" name="review"></textarea><br>
+        
+            <label for="userName">Your Name(Optional) </label><br>
+            <input type="text" id="userName" name="userName"><br>
 
-                <input type="checkbox" id="feature2" name="usefulFeatures" value="feature2">
-                <label for="feature2">Feature 2</label>
-
-                <!-- Add more checkboxes for additional features -->
-            </fieldset>
-
-            <label for="review">Written Review:</label>
-            <textarea id="review" name="review"></textarea>
-
-            <label for="userName">User Name:</label>
-            <input type="text" id="userName" name="userName">
-
-            <input type="submit" value="Submit Review">
+            <input type="submit" value="Post Review">
+            
         </form>
         
     </main>
