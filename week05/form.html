@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Leticia Pinto Figueiredo">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+        
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+                
+            
+            
+            <label for="productSelect">Product Name</label>
+            <select id="productSelect" name="Product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">★</label> <!-- Unicode star character -->
+                
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2">★★</label>
+                
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3">★★★</label>
+
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4">★★★★</label>
+
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★★★★★</label>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <input type="checkbox" id="feature1" name="usefulFeatures" value="feature1">
+                <label for="feature1">Feature 1</label>
+
+                <input type="checkbox" id="feature2" name="usefulFeatures" value="feature2">
+                <label for="feature2">Feature 2</label>
+
+                <!-- Add more checkboxes for additional features -->
+            </fieldset>
+
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+        </form>
+        
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> // Letícia Figueiredo // Portugal</p>
+        <p><span id="lastModified"></span></p>
+        
+    </footer>
+</body>
+</html>
