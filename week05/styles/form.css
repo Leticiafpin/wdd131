@@ -44,7 +44,7 @@ input[type="submit"] {
     border: 0.1px solid;
     padding: 10px 20px;
     cursor: pointer;
-    max-width: 100%;
+    width: 100%;
     }
 
 /* Estilos das estrelas de avaliação */
