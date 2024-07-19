@@ -68,11 +68,12 @@ main {
 }
 
 .excurtion{
-    border: #6a696985 solid 0.2rem;
+    border: #d2d2d285 solid 0.2rem;
     width: 300px;
     display: block;
     text-align: center;
     padding: 5px;
+    background-color: #dbdbdb85 ;
 }
 
 .excurtion img {
@@ -102,4 +103,12 @@ imga {
     width: 100px;
     padding: 10px;
     display: flex;
+}
+
+footer {
+    background-color: #004aad;
+    color: #FFFF;
+    display: flex;
+    padding-left: 20px ;   
+    border-bottom: #008037 solid 20px;
 }
