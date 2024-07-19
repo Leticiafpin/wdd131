@@ -1,3 +1,9 @@
+/// Get the current year
+const currentYear = new Date().getFullYear();
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("current-year").textContent = currentYear;
+});
+
 // script.js
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -46,3 +52,36 @@ const button = document.querySelector('button');
 button.addEventListener('click', () => {
     alert('Obrigado por entrar em contato conosco!');
 });
+
+//Contact form
+// Your product array
+const products = [
+    {
+        id: 'Portugal experience',
+    },
+    {
+        id: 'Weekend in Spain',
+        name: 'Portugal experience',
+    },
+    {
+        id: 'USA, 15 Days',
+        name: 'Portugal experience',
+    },
+    {
+        id: 'create a unique experience',
+        name: 'create a unique experience',
+    },
+];
+
+// Get the select element
+document.addEventListener('DOMContentLoaded', () => {
+    const selectElement = document.getElementById('productSelect');
+    // Populate options
+    products.forEach(product => {
+        const option = document.createElement('option');
+        option.value = product.id;
+        option.textContent = product.name;
+        selectElement.appendChild(option);
+    });
+});
+

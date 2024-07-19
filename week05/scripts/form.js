@@ -1,6 +1,3 @@
-
-
-
 // Your product array
 const products = [
     {

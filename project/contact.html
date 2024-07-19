@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +9,48 @@
 </head>
 <body>
     <header>
-        <h1>LF Travel</h1>
+        <img src="Images/logo2.png" alt="">
     </header>
     <nav>
         <a href="final.html">Home</a>
         <a href="destinations.html">Destinations</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Let us create a unique experience!</p>
-        <!-- Aqui você pode adicionar mais conteúdo, como imagens, formulários, etc. -->
-    </div>
     
+    <main>
+        <div class="container">
+            <h2>Contact</h2>
+            <h3>Let us create a unique experience!</h3>
+        </div>
+            
+        <form method="get" >
+            <label for="productSelect">Tour Name:</label>
+            <select id="productSelect">
+                <option value="">Select a product</option>
+            </select>
+        
+
+            <label for="userName">Your Name(Optional) </label><br>
+            <input type="text" id="userName" name="userName"><br>
+
+            <div class="date">
+                <label for="installationDate">Date of Birth</label><br>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div><br>
+            <div>
+                <label for="review">Any more questions? Write here</label><br>
+                <textarea id="review" name="review"></textarea><br>
+            </div>
+            
+
+            <input type="submit" value="Submit">
+            
+        </form>
+        
+    </main>
+    <footer>
+        <p>© <span id="current-year"></span> // Letícia Figueiredo // Portugal</p>
+        <p><span id="lastModified"></span></p>    
+    </footer>
 </body>
 </html>

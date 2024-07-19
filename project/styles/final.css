@@ -21,6 +21,7 @@ header {
 
 header img {
     width: 200px;
+    
 }
 
 /* Navigation styles */
@@ -41,6 +42,7 @@ nav a {
 
 .container img{
     width: 100%;
+    box-shadow: 0 1px 4px #000;
 }
 
 h1, h2,h3{
@@ -68,12 +70,12 @@ main {
 }
 
 .excurtion{
-    border: #d2d2d285 solid 0.2rem;
+    box-shadow: 0 2px 4px #000;
     width: 300px;
     display: block;
     text-align: center;
     padding: 5px;
-    background-color: #dbdbdb85 ;
+    background-color: #e3e2e2d7 ;
 }
 
 .excurtion img {
@@ -97,6 +99,66 @@ main {
     nav a {
         margin: 0.5rem 0;
     }
+}
+
+
+/* Estilos do formulário */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #000;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100% ;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #e3e1e3;
+    color: black;
+    border: 0.1px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    }
+
+    /* Estilos do rótulo */
+label {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Estilos do campo de entrada */
+input[type="date"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%; /* Ajuste conforme necessário */
+    border-radius: 5px;
+    background-image: url('calendar-icon.png'); /* Caminho para o ícone de calendário */
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px 20px; /* Tamanho do ícone */
+}
+
+/* Estilos do texto de espaço reservado */
+input[type="date"]::placeholder {
+    color: #aaa;
+}
+
+
+/* Estilo da pergunta */
+.form-question {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
 }
 
 
