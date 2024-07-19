@@ -7,15 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // script.js
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Select an element and modify it
-    const titleElement = document.querySelector('.hero-section-title');
-    titleElement.textContent = 'Discover the World with Us!';
-
-    // Event listener to react to clicks
-    const button = document.querySelector('.scroll-down-icon');
-    button.addEventListener('click', () => {
-        alert('Scrolling down...');
-    });
+   
 
     // Conditional example
     const isMobile = window.innerWidth < 768;
@@ -47,30 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-// Exemplo de código JavaScript (adapte conforme necessário)
-const button = document.querySelector('button');
-button.addEventListener('click', () => {
-    alert('Obrigado por entrar em contato conosco!');
-});
-
 //Contact form
 // Your product array
+
 const products = [
-    {
-        id: 'Portugal experience',
-    },
-    {
-        id: 'Weekend in Spain',
-        name: 'Portugal experience',
-    },
-    {
-        id: 'USA, 15 Days',
-        name: 'Portugal experience',
-    },
-    {
-        id: 'create a unique experience',
-        name: 'create a unique experience',
-    },
+    { name: 'Portugal experience', description: 'Portugal' },
+    { name: 'Weekend in Spain', description: 'Spain' },
+    { name: 'USA, 15 Days', description: 'USA' },
+    { name: 'Create a unique experience', description: 'create a unique experience' },
 ];
 
 // Get the select element
@@ -79,9 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Populate options
     products.forEach(product => {
         const option = document.createElement('option');
-        option.value = product.id;
-        option.textContent = product.name;
+        option.value = product.name;
+        option.textContent = product.description;
         selectElement.appendChild(option);
     });
 });
+
 
