@@ -55,7 +55,6 @@ h1, h2,h3{
     color: #f5ab00;
 }
 
-
 /* Container styles */
 main {
     max-width: 1200px;
@@ -63,9 +62,26 @@ main {
     padding: 2rem;
 }
 
-.color{
+.cardBlock{
     display: flex;
+    justify-content: space-between;
 }
+
+.excurtion{
+    border: #6a696985 solid 0.2rem;
+    width: 300px;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+.excurtion img {
+    width: 100%;
+    
+}
+
+
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
