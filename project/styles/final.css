@@ -141,6 +141,7 @@ footer {
     display: flex;
     padding-left: 20px ;   
     border-bottom: #008037 solid 20px;
+    width: 100%;
 }
 
 /* Responsive styles */
